@@ -259,6 +259,14 @@
       ],
       "network": ["tcp", "udp"],
       "outboundTag": "direct"
-    }
+    },
+    {
+			"__name__": "Proxy",
+			"id": "540D31F3-3E42-4817-9047-5EB635AD3C2A",
+			"type": "field",
+			"network": ["tcp", "udp"],
+			"outboundTag": "proxy"
+		}
   ]
+
 }
