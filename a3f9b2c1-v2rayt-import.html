@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Загрузка правил маршрутизации</title>
+  <!-- Запрет индексации -->
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex">
+  <!-- Запрет архивирования и сниффинга -->
+  <meta name="robots" content="noarchive">
+  <meta name="referrer" content="no-referrer">
+  <!-- Open Graph (на случай, если кто-то поделится) -->
+  <meta property="og:title" content="Служебная страница">
+  <meta property="og:description" content="Эта страница не предназначена для публичного доступа.">
+  <!-- Автоперенаправление -->
+  <script>
+    // Задержка 500 мс для совместимости с iOS Safari
+    setTimeout(function() {
+      window.location.href = "v2raytun://import-ruleset/https://raw.githubusercontent.com/NewDroid404/Rules-v2raytun342/refs/heads/main/v2rayD33B7820E0.json";
+    }, 500);
+  </script>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      padding: 20px;
+      background: #f5f5f7;
+      color: #1d1d1f;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 12px 24px;
+      background: #0071e3;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+    }
+    .btn:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Загрузка правил для v2raytun</h2>
+    <p>Если ничего не произошло, нажмите кнопку ниже или скопируйте ссылку вручную.</p>
+    
+    <a href="v2raytun://import-ruleset/https://raw.githubusercontent.com/NewDroid404/Rules-v2raytun342/refs/heads/main/v2rayD33B7820E0.json" class="btn" id="launchBtn">
+      Открыть в v2raytun
+    </a>
+
+    <p style="font-size:14px; color:#6e6e73; margin-top:24px;">
+      Примечание: эта страница не индексируется и предназначена только для прямого доступа.
+    </p>
+  </div>
+
+  <script>
+    // Дополнительная защита: если протокол не поддерживается, показать подсказку
+    document.getElementById('launchBtn').addEventListener('click', function(e) {
+      setTimeout(function() {
+        if (!document.hidden) {
+          alert('Если приложение не открылось, скопируйте ссылку и вставьте в адресную строку Safari.');
+        }
+      }, 1000);
+    });
+  </script>
+</body>
+</html>
